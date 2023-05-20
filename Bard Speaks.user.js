@@ -17,7 +17,7 @@ var synth = window.speechSynthesis;
 
 // Chrome loads voices asynchronously.
 window.speechSynthesis.onvoiceschanged = function(e) {
-loadVoice();
+setInterval(checkTextLength, 200);
 };
 
 function loadVoice() {
@@ -31,26 +31,12 @@ utterance.volume = 1;
 synth.speak(utterance);
 }
 
-    var once = false;
+var once = false;
 
 function checkTextLength() {
 var textLength = document.getElementById("bard_section_div").innerText.length;
-if (textLength >= 2) {
-if (!once) {
+if (textLength >= 2 && !once) {
 loadVoice();
-once = true;
-}
-}
-}
+once = true; }}
 
-
-
-setInterval(checkTextLength, 200);
-
-function speak() {
-if (!once) {
-loadVoice();
-once = true;
-}
-}
 })();
