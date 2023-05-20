@@ -31,14 +31,19 @@ utterance.volume = 1;
 synth.speak(utterance);
 }
 
+    var once = false;
+
 function checkTextLength() {
 var textLength = document.getElementById("bard_section_div").innerText.length;
-if (textLength >= 20) {
+if (textLength >= 2) {
+if (!once) {
 loadVoice();
+once = true;
+}
 }
 }
 
-var once = false;
+
 
 setInterval(checkTextLength, 200);
 
