@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  Automatically play synthesized speech of Bards response. Requires Bard for Google extension https://chrome.google.com/webstore/detail/bard-for-google/hnadleianomnjcoeplifgbkiejchjmah
 // @author       George
-// @match        https://www.google.com/search?q=*
+// @match        https://www.google.com/search?*bardo=1*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @grant        none
 // ==/UserScript==
@@ -12,7 +12,6 @@
 (function() {
     'use strict';
 
-    // Your code here...
 var synth = window.speechSynthesis;
 
 // Chrome loads voices asynchronously.
@@ -29,14 +28,18 @@ utterance.rate = 6;
 utterance.pitch = 1.1;
 utterance.volume = 1;
 synth.speak(utterance);
+
 }
 
+//speak one time only (rather than again at setInterval)
 var once = false;
 
+//wait for response of at least 2 characters
 function checkTextLength() {
 var textLength = document.getElementById("bard_section_div").innerText.length;
 if (textLength >= 2 && !once) {
 loadVoice();
 once = true; }}
+}
 
-})();
+)();

@@ -1,12 +1,17 @@
 # Bard Speaks
- Speech synthesis automatically plays for bard output. Requires [Bard for Google](https://chrome.google.com/webstore/detail/bard-for-google/hnadleianomnjcoeplifgbkiejchjmah) browser extension.
-
- It would be easy to modify to work on the normal Bard website too, but I prefer the extension.
+ Automatic speech synthesis for Bard.
 
  ## Usage
  
- It automatically plays the speech synthesis at full volume as soon as Bard loads a text answer.
+ It automatically plays the speech synthesis as soon as Bard loads a text answer.
+
+ It requires the [Bard for Google](https://chrome.google.com/webstore/detail/bard-for-google/hnadleianomnjcoeplifgbkiejchjmah) browser extension.
 
  ## Recommended further work for the user, if they want to go all out
  
- currently use a MacBook dictate key to communicate with an AI. I hold down the key to start speaking, and then release it when I am finished. The key uses the OpenAI Whisper API to transcribe my speech into text, which is then passed to a Google search in an Edge browser background tab. The search results are then spoken aloud by Bard. I use BetterTouchTool to create a hotkey for the dictate key, Apple Shortcuts to communicate with the OpenAI servers, and the Background Tab extension to keep the Google search results in the background. This process is all seamless and automatic, as though the MacBook dictate key is a working intercom for the AI.
+I use the MacBook dictate key to talk to the AI. I press and hold the key to speak and release it when done. My speech is transcribed into text using OpenAI Whisper API and searched on Google in an Edge browser background tab. The results are spoken by Bard. I use BetterTouchTool for a hotkey, Apple Shortcuts to connect to OpenAI, and a Background Tab extension to keep search results in the background. It’s all automatic and seamless, like using an intercom for the AI.
+
+Links to the tools I use:
+
+- [BetterTouchtool](https://folivora.ai/) to remap a KeyDown and KeyUp to record a sound clip
+- [Whisper Shortcut](https://giacomomelzi.com/transcribe-audio-messages-iphone-ai/) to use OpenAI Whisper speech recognition (it is leagues more accurate than Google/Siri/Alexa)
