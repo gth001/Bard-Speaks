@@ -15,3 +15,4 @@ Links to the tools I use:
 
 - [BetterTouchtool](https://folivora.ai/) to remap a KeyDown and KeyUp to record a sound clip
 - [Whisper Shortcut](https://giacomomelzi.com/transcribe-audio-messages-iphone-ai/) to use OpenAI Whisper speech recognition (it is leagues more accurate than Google/Siri/Alexa)
+- [Force Background Tab - Chrome Web Store](https://chrome.google.com/webstore/detail/force-background-tab/gidlfommnbibbmegmgajdbikelkdcmcl)
