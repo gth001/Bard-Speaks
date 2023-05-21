@@ -5,7 +5,7 @@
  
  It automatically plays the speech synthesis as soon as Bard loads a text answer.
 
- It requires the [Bard for Google](https://chrome.google.com/webstore/detail/bard-for-google/hnadleianomnjcoeplifgbkiejchjmah) browser extension.
+ It requires the [Bard for Google](https://chrome.google.com/webstore/detail/bard-for-google/hnadleianomnjcoeplifgbkiejchjmah) and [Tampermonkey](https://www.tampermonkey.net/) browser extensions.
 
  ## Recommended further work for the user, if they want to go all out
  
